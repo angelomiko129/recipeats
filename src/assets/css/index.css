@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .light {
+    --background: 244, 244, 244;
+    --text: 9, 9, 11;
+    --primary: 249, 187, 31;
+    --light: 224, 224, 224;
+    --card: 249, 246, 237;
+
+    background: rgba(var(--background));
+    input,
+    textarea,
+    option,
+    select {
+      @apply text-text;
+    }
+  }
+  .dark {
+    --background: 9, 9, 11;
+    --text: 244, 244, 244;
+    --primary: 249, 187, 31;
+    --dark: 21, 21, 26;
+    --card: 21, 21, 26;
+
+    background: rgba(var(--background));
+    input,
+    textarea,
+    option,
+    select {
+      @apply text-text;
+    }
+  }
+  .text-primary {
+    color: rgba(var(--primary));
+  }
+
+  .text-background {
+    color: rgba(var(--background));
+  }
+  * {
+    @apply text-text;
+  }
+  h1 {
+    @apply font-sourceserif text-fluid-xxxl font-bold;
+  }
+  h2 {
+    @apply font-mona text-fluid-xxl font-bold;
+  }
+  h3 {
+    @apply font-mona text-fluid-xl font-bold;
+  }
+  h4 {
+    @apply font-mona text-fluid-lg font-bold;
+  }
+  h5 {
+    @apply font-mona text-fluid-md font-bold;
+  }
+  p,
+  li {
+    @apply text-fluid-md;
+  }
+  button {
+    @apply px-6 py-4;
+  }
+
+  .hero-responsive {
+    @apply mb-8 grid h-full grid-cols-1 items-start justify-center gap-10 p-4 text-center sm:grid-cols-2 sm:items-center sm:gap-32 sm:text-start;
+  }
+  .footer-responsive {
+    @apply flex flex-col gap-2 p-0 sm:p-4;
+  }
+}
