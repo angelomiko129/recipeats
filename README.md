@@ -7,6 +7,7 @@ Open terminal
 ### Frontend
 
 ```
+cd frontend
 npm install
 ```
 
@@ -24,6 +25,7 @@ npm install
 ### Frontend (Optional)
 
 ```
+cd frontend
 code .env
 ```
 
@@ -52,6 +54,7 @@ MONGO_URI=<your_mongodb_uri>
 ### Frontend
 
 ```
+cd frontend
 npm run dev
 ```
 
