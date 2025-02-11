@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const path = require("path");
 
 const auth = require("./routes/authRoutes");
 const recipe = require("./routes/recipeRoutes");
@@ -13,6 +14,7 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(cors());
+app.use("/uploads", express.static(path.resolve(__dirname, "uploads")));
 
 // routes and apis
 app.use("/api/auth", auth);

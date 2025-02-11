@@ -18,7 +18,7 @@ const Card = ({ recipe }) => {
           onClick={() => navigate(`/recipes/${recipe._id}`)}
         >
           <img
-            src={`/backend/uploads/${recipe.image}`}
+            src={`${import.meta.env.VITE_IMAGE_HOST}/uploads/${recipe.image}`}
             alt=""
             className="aspect-video rounded-md object-cover"
           />

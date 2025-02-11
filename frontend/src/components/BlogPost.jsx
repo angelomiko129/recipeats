@@ -70,7 +70,7 @@ const BlogPost = ({ recipe, onDelete }) => {
         {/* Image */}
         <div className="mt-4 flex justify-center gap-2 bg-light">
           <img
-            src={`/backend/uploads/${recipe.image}`}
+            src={`${import.meta.env.VITE_IMAGE_HOST}/uploads/${recipe.image}`}
             alt="recipe image"
             className="h-[335px] w-[751px] object-cover sm:h-[660px]"
           />

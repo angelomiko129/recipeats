@@ -42,7 +42,7 @@ const RecipeDetails = () => {
           {/* Left side card  */}
           <div className="rounded-lg border bg-card p-8 text-center">
             <img
-              src={`/backend/uploads/${recipe.image}`}
+              src={`${import.meta.env.VITE_IMAGE_HOST}/uploads/${recipe.image}`}
               alt={recipe.title}
               className="h-80 w-full rounded-md object-cover"
             />
