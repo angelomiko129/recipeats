@@ -27,4 +27,5 @@ dist-ssr
 backend/node_modules
 **/.env
 eslint.config.js
+.vite
 todo.txt

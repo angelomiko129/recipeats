@@ -4,8 +4,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
-const auth = require("./routes/auth");
-const recipe = require("./routes/recipe");
+const auth = require("./routes/authRoutes");
+const recipe = require("./routes/recipeRoutes");
 
 dotenv.config();
 const app = express();
@@ -26,7 +26,7 @@ mongoose
     const PORT = process.env.PORT || 5000;
     const IP_ADDRESS = process.env.IP_ADDRESS || "localhost";
     app.listen(PORT, IP_ADDRESS, () =>
-      console.log(`Server running at port ${PORT}`),
+      console.log(`Server running at port ${PORT}`)
     );
   })
   .catch((err) => console.log(err));
