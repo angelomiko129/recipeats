@@ -22,7 +22,7 @@ npm install
 
 ## Creating an .env file
 
-### Frontend (Optional)
+### Frontend
 
 ```
 cd frontend
@@ -30,8 +30,11 @@ code .env
 ```
 
 ```
+// Optional
 VITE_IP_ADDRESS=<your_ip_address>
+// Required
 VITE_PORT=5000 // this is the default port used in the project
+VITE_IMAGE_HOST=http://localhost:${VITE_PORT}
 ```
 
 ### Backend
