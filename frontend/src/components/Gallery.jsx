@@ -15,7 +15,7 @@ const Card = ({ recipes, reverse }) => {
         {recipes.map((recipe) => (
           <MagicCard key={recipe._id}>
             <img
-              src={`/backend/uploads/${recipe.image}`}
+              src={`${import.meta.env.VITE_IMAGE_HOST}/uploads/${recipe.image}`}
               alt={recipe.title}
               className="max-w-md object-cover"
             />
