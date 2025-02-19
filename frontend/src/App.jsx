@@ -5,18 +5,18 @@ import {
   Outlet,
   useParams,
 } from "react-router-dom";
-import logowhite from "./../public/images/logo/logowhite.svg";
-import logoblack from "./../public/images/logo/logoblack.svg";
-import { Footer } from "./components/Footer";
-import { Nav } from "./components/Nav";
-import Home from "./pages/Home";
-import CommunityHub from "./pages/CommunityHub";
-import Recipe from "./pages/Recipe";
-import Blogs from "./pages/Blogs";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import CategoryPage from "./pages/CategoryPage";
-import RecipeDetails from "./pages/RecipeDetails";
+import logowhite from "@images/logo/logowhite.svg";
+import logoblack from "@images/logo/logoblack.svg";
+import { Footer } from "@components/Footer";
+import { Nav } from "@components/Nav";
+import Home from "@pages/Home";
+import CommunityHub from "@pages/CommunityHub";
+import Recipe from "@pages/Recipe";
+import Blogs from "@pages/Blogs";
+import Login from "@pages/Login";
+import Register from "@pages/Register";
+import CategoryPage from "@pages/CategoryPage";
+import RecipeDetails from "@pages/RecipeDetails";
 
 // Page title handler
 const PageTitleHandler = ({ title, children }) => {

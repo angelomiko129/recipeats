@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import RippleButton from "@/components/ui/ripple-button";
-import Reviews from "@/components/Reviews";
+import RippleButton from "@components/ui/ripple-button";
+import Reviews from "@components/Reviews";
 
 const CommunityHub = () => {
   return (

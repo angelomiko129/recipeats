@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import Card from "@/components/Card";
-import Categories from "@/components/Categories";
-import { Input } from "@/components/ui/input";
-import { WordRotate } from "@/components/ui/word-rotate";
+import Card from "@components/Card";
+import Categories from "@components/Categories";
+import { Input } from "@components/ui/input";
+import { WordRotate } from "@components/ui/word-rotate";
 import { BsFillSearchHeartFill } from "react-icons/bs";
 import { fetchRecipes } from "@/api";
 

@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import { CiEdit } from "react-icons/ci";
-import BlogPost from "@/components/BlogPost";
-import CreatePost from "@/components/CreatePost";
-import Featured from "@/components/Featured";
+import BlogPost from "@components/BlogPost";
+import CreatePost from "@components/CreatePost";
+import Featured from "@components/Featured";
 import { createRecipe, fetchRecipes } from "@/api";
 
 const LatestActivity = () => {

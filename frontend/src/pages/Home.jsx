@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { BsFillSearchHeartFill } from "react-icons/bs";
 import { FaPeopleGroup } from "react-icons/fa6";
-import { Gallery } from "@/components/Gallery";
-import WordFadeIn from "@/components/ui/word-fade-in";
-import InteractiveHoverButton from "@/components/ui/interactive-hover-button";
+import { Gallery } from "@components/Gallery";
+import WordFadeIn from "@components/ui/word-fade-in";
+import InteractiveHoverButton from "@components/ui/interactive-hover-button";
 
 const Home = () => {
   const loggedInUser = localStorage.getItem("username");
