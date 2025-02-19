@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const getAllRecipe = async (req, res) => {
-  let { page, limit } = req.query;
+  let { page = 1, limit = 6 } = req.query;
 
   page = parseInt(page);
   limit = parseInt(limit);
